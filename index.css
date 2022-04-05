@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  margin: 0;
+  font-size: 45px;
+}
+h2 {
+  margin: 0;
+  font-size: 35px;
+}
+h3 {
+  margin: 0;
+  font-size: 22px;
+}
+p {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 40px;
+}
+button {
+  padding: 12px 35px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  background-color: #FF9A02;
+  color: white;
+}
+input, select {
+  margin-top: 5px;
+  width: 100%;
+  height: 35px;
+  background: #E5E5E5;
+  border: 2px solid rgba(139, 139, 139, 0.5);
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 18px;
+}
+
+
+header {
+  height: 80px;
+  background: #FF9A02;
+  padding: 0 25px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+header h3 {
+  margin: auto 0;
+}
+header img {
+  width: 25px;
+  height: 30px;
+  margin: auto 0;
+}
+
+.event-generator-menu-background {
+  background-image: url(images/background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.event-generator-menu-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+.event-generator-menu-container {
+  padding: 110px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.event-generator-menu-container h1 {
+  margin-bottom: 40px;
+  color: white;
+}
+.event-generator-menu-container p {
+  margin-bottom: 50px;
+  color: white;
+}
+
+.generator-wrapper, .event-registration-wrapper {
+  width: 100%;
+  padding: 100px 0;
+}
+.generator-container, .event-registration-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.generator-container h2, .event-registration-container h2 {
+  margin-bottom: 5px;
+  color: #FF9A02;
+}
+.generator-container p, .event-registration-container p {
+  margin-bottom: 50px;
+}
+
+
+.generator-form div, .event-registration-form div {
+  margin-bottom: 25px;
+}
+.generator-form button, .event-registration-form button {
+  margin-top: 30px;
+}
+
+.days-of-the-week-wrapper div {
+  display: flex;
+  margin: 5px 0;
+}
+.days-of-the-week-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  background: #E5E5E5;
+  border: 2px solid rgba(139, 139, 139, 0.5);
+  box-sizing: border-box;
+}
+.days-of-the-week input {
+  width: 25px;
+  height: 25px;
+}
+.days-of-the-week label {
+  margin: auto 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hour-range div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hour-range div input {
+  width: 80%;
+}
+.hour-range div label {
+  font-family: 'Oswald', sans-serif;
+}
+
+.daily-availabilities div {
+  margin: 5px 0 10px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #E5E5E5;
+  border: 2px solid rgba(139, 139, 139, 0.5);
+}
+.daily-availabilities div label {
+  font-family: 'Oswald', sans-serif;
+}
+
+.daily-availabilities div div, .add-a-day {
+  display: flex;
+  flex-flow: colum wrap;
+  margin: 0;
+  border: none;
+  padding: 3px 0;
+  box-sizing: border-box;
+}
+.daily-availabilities div div p, .add-a-day p {
+  margin: 0;
+  padding: 0 10px;
+}
+.daily-availabilities div div input {
+  background-color: white;
+}
+.add-a-slot {
+  align-items: center;
+}
+.add-a-slot p, .add-a-day p {
+  font-size: 18px;
+}
+.add-a-slot img, .add-a-day img {
+  width: 27px;
+  height: 27px;
+}
+.add-a-day {
+  align-items: center;
+  padding: 0;
+}
