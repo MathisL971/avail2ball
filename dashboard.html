@@ -11,6 +11,7 @@
     <script src="components/footer.js" type="text/javascript" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -40,17 +41,16 @@
           <div class="invite">
             <h3>Event ID</h3>
             <div class="">
-              <h4>232183</h4>
-              <a href="#">
+              <h4 id="id-to-copy">232183</h4>
+              <a href="#" onclick="copyToClipboard('#id-to-copy')">
                 <img src="images/copy-paste.png" alt="">
               </a>
             </div>
-
             <p>To invite other people to the event, simply share the event ID (to enter on the site) or the following URL with them </p>
             <div class="">
-              <h5>www.avail2ball.com/232183</h5>
+              <h5 id="url-to-copy">www.avail2ball.com/232183</h5>
               <a href="#">
-                <img src="images/copy-paste.png" alt="">
+                <img src="images/copy-paste.png" onclick="copyToClipboard('#url-to-copy')" alt="">
               </a>
             </div>
           </div>
