@@ -4,19 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="member-registration.css">
+
+    <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
     <title></title>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">  </head>
-  <header>
-    <h3>AVAIL2BALL</h3>
-    <img src="images/hamburger-menu-icon.png" alt="hamburger-icon">
-  </header>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
 
 
   <body>
+    <nav class="navbar">
+      <div class="brand-title"><a href="index.html">Avail2ball</a></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generator.html">Scheduler</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <div class="event-registration-wrapper">
         <div class="event-registration-container">
@@ -36,149 +51,97 @@
               <label for="name">Password (optional)</label><br>
               <input type="text" id="name" name="name" required="" minlength="1" maxlength="30" size="10">
             </div>
-
             <div class="daily-availabilities">
               <label for="name">Daily Availabilities</label>
               <div class="day">
-                <label for="name">Monday</label>
-                <div class="">
-                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
-                  <p>to</p>
-                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                <div class="availability-day">
+                  <select class="" name="">
+                    <option value="select">Select the day</option>
+                    <option value="monday">Monday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                  <a href="#"><img src="images/trash-red.png" alt="red-bin-icon"></a>
                 </div>
-                <div class="">
+                <div class="availability-time">
                   <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
                   <p>to</p>
                   <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                  <a href=""><img src="images/trash-black.png" alt="bin-icon"></a>
+                </div>
+                <div id="availabilitySlot" class="availability-time">
+                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
+                  <p>to</p>
+                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                  <a href=""><img src="images/trash-black.png" alt="bin-icon"></a>
+                </div>
+
+                <div class="add-a-slot">
+                  <img src="images/+iconv2.png" alt="+icon">
+                  <p>Add a slot</p>
+                </div>
+              </div>
+              <div class="day">
+                <div class="availability-day">
+                  <select class="" name="">
+                    <option value="select">Select the day</option>
+                    <option value="monday">Monday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                  <a href="#"><img src="images/trash-red.png" alt="red-bin-icon"></a>
+                </div>
+                <div class="availability-time">
+                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
+                  <p>to</p>
+                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                  <a href="#"><img src="images/trash-black.png" alt="bin-icon"></a>
+                </div>
+                <div class="availability-time">
+                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
+                  <p>to</p>
+                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                  <a href="#"><img src="images/trash-black.png" alt="bin-icon"></a>
+
                 </div>
                 <div class="add-a-slot">
-                  <img src="images/+icon.png" alt="+icon">
+                  <img src="images/+iconv2.png" alt="+icon">
                   <p>Add a slot</p>
                 </div>
 
               </div>
               <div class="day">
-                <label for="name">Wednesday</label>
-                <div class="">
-                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
-                  <p>to</p>
-                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                <div class="availability-day">
+                  <select class="" name="">
+                    <option value="select">Select the day</option>
+                    <option value="monday">Monday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                  <a href="#"><img src="images/trash-red.png" alt="red-bin-icon"></a>
                 </div>
-                <div class="">
+                <div class="availability-time">
                   <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
                   <p>to</p>
                   <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
+                  <a href="#"><img src="images/trash-black.png" alt="bin-icon"></a>
                 </div>
                 <div class="add-a-slot">
-                  <img src="images/+icon.png" alt="+icon">
+                  <img src="images/+iconv2.png" alt="+icon">
                   <p>Add a slot</p>
-                </div>
 
-              </div>
-              <div class="day">
-                <label for="name">Saturday</label>
-                <div class="">
-                  <input type="time" id="from" name="after" min="09:00" max="00:00" required="">
-                  <p>to</p>
-                  <input type="time" id="to" name="after" min="00:00" max="00:00" required="">
                 </div>
-                <div class="add-a-slot">
-                  <img src="images/+icon.png" alt="+icon">
-                  <p>Add a slot</p>
-                </div>
-
               </div>
               <div class="add-a-day">
-                <img src="images/+icon.png" alt="+icon">
+                <img src="images/+iconv2.png" alt="+icon">
                 <p>Add a day</p>
               </div>
+            </div>
+            <button type="button" name="button"><a href="dashboard.html">Save Information</a></button>
 
-            </div>
-            <div class="hour-range">
-              <label for="name">Hour Range</label><br>
-              <div class="from-hour">
-                <label for="appt">From</label>
-                <input type="time" id="after" name="after" min="09:00" max="00:00" required="">
-              </div>
-              <div class="to-hour">
-                <label for="appt">Until</label>
-                <input type="time" id="after" name="after" min="09:00" max="00:00" required="">
-              </div>
-            </div>
-            <div class="event-duration">
-              <label for="name">Event Duration</label><br>
-              <select class="" name="">
-                <option value=""></option>
-                <option value="1h">1 Hour</option>
-                <option value="2h">2 Hours</option>
-                <option value="3h">3 Hours</option>
-                <option value="4h">4 Hours</option>
-                <option value="5h">5 Hours</option>
-                <option value="6h">6 Hours</option>
-                <option value="7h">7 Hours</option>
-                <option value="8h">8 Hours</option>
-                <option value="9h">9 Hours</option>
-                <option value="10h">10 Hours</option>
-              </select>
-            </div>
-            <div class="min-num-players">
-              <label for="name">Minimum # of players</label><br>
-              <select class="" name="">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-              </select>
-            </div>
-            <div class="max-num-players">
-              <label for="name">Maximum # of players (optional)</label><br>
-              <select class="" name="">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-              </select>
-            </div>
-            <button type="button" name="button">Generate Event</button>
           </form>
         </div>
 
@@ -186,6 +149,7 @@
 
 
       </div>
+
     </main>
   </body>
 

@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="events.css">
+
     <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
     <title></title>
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">
   </head>
-  <body>
 
+
+  <body>
     <nav class="navbar">
       <div class="brand-title"><a href="index.html">Avail2ball</a></div>
       <a href="#" class="toggle-button">
@@ -27,18 +31,25 @@
         </ul>
       </div>
     </nav>
-
     <main>
-      <div class="event-generator-menu-background">
-        <div class="event-generator-menu-wrapper">
-          <div class="event-generator-menu-container">
-            <h1>Hastle-free pick-up game planning</h1>
-            <p>We enable groups of friends and amateur players to come together and seamlessly plan pick-up games around their city</p>
-            <a href="generator.html">Create Event</a>
-          </div>
+      <div class="events-wrapper">
+        <div class="events-container">
+          <h2>Events</h2>
+          <p>Join an event using the Event ID</p>
+
+          <form class="" action="index.html" method="post">
+            <div class="event-id">
+              <label for="name">Event ID</label><br>
+              <input type="text" id="name" name="name" required="" minlength="1" maxlength="30" size="10">
+              <button type="button" name="button" onclick="generate()"><a href="member-registration.html">Join Event</a></button>
+            </div>
+          </form>
+
+
+
+
         </div>
       </div>
-
     </main>
   </body>
 
