@@ -4,23 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="generator.css">
+    <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
     <title></title>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">  </head>
-  <header>
-    <h3>AVAIL2BALL</h3>
-    <img src="images/hamburger-menu-icon.png" alt="hamburger-icon">
-  </header>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+  </head>
 
 
   <body>
+    <nav class="navbar">
+      <div class="brand-title"><a href="index.html">Avail2ball</a></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generator.html">Scheduler</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <div class="generator-wrapper">
         <div class="generator-container">
-          <h2>Event Generator</h2>
+          <h2>Scheduler</h2>
           <p>Define basic information about the event</p>
 
           <form class="generator-form" action="index.html" method="post">
@@ -69,19 +82,22 @@
                 </div>
               </div>
             </div>
+            <div class="specific-date">
+              <label for="start">Date</label>
+              <input type="date" name="specific-date">
+            </div>
             <div class="hour-range">
               <label for="name">Hour Range</label><br>
-              <div class="from-hour">
+              <div class="hours">
                 <label for="appt">From</label>
                 <input type="time" id="after" name="after" min="09:00" max="00:00" required="">
-              </div>
-              <div class="to-hour">
                 <label for="appt">Until</label>
                 <input type="time" id="after" name="after" min="09:00" max="00:00" required="">
               </div>
+
             </div>
-            <div class="event-duration">
-              <label for="name">Event Duration</label><br>
+            <div class="game-duration">
+              <label for="name">Game Duration</label><br>
               <select class="" name="">
                 <option value=""></option>
                 <option value="1h">1 Hour</option>
@@ -97,7 +113,7 @@
               </select>
             </div>
             <div class="min-num-players">
-              <label for="name">Minimum # of players</label><br>
+              <label for="name">Minimum # Of Players</label><br>
               <select class="" name="">
                 <option value=""></option>
                 <option value="1">1</option>
@@ -118,7 +134,7 @@
               </select>
             </div>
             <div class="max-num-players">
-              <label for="name">Maximum # of players (optional)</label><br>
+              <label for="name">Maximum # Of Players (Optional)</label><br>
               <select class="" name="">
                 <option value=""></option>
                 <option value="1">1</option>
@@ -153,7 +169,8 @@
                 <option value="30">30</option>
               </select>
             </div>
-            <button type="button" name="button">Generate Event</button>
+            <button type="button" name="button" onclick="generate()"><a href="dashboard.html">Generate Event</a></button>
+
           </form>
         </div>
 
